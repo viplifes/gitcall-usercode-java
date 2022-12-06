@@ -10,17 +10,17 @@ import okhttp3.Response;
  import javax.mail.internet.InternetAddress;
 
 public class Usercode implements UsercodeHandler<Map<String, String>, Map<String, String>> {
-    OkHttpClient client = new OkHttpClient();
+//    OkHttpClient client = new OkHttpClient();
     @java.lang.Override
     public Map<String, String> handle(Map<String, String> data) throws Exception {
 
-        Request request = new Request.Builder()
-                .url("https://reqres.in/api/users?page=1")
-                .build();
-
-        Response response = client.newCall(request).execute();
-
-        data.put("res", response.body().string());
+//        Request request = new Request.Builder()
+//                .url("https://reqres.in/api/users?page=1")
+//                .build();
+//
+//        Response response = client.newCall(request).execute();
+//
+//        data.put("res", response.body().string());
 
          Address address = new InternetAddress("test@gmail.com");
          data.put("address", address.toString());

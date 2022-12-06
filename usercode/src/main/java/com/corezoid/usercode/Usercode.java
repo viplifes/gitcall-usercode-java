@@ -6,7 +6,6 @@ import java.util.Map;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
- import javax.mail.*;
  import javax.mail.internet.InternetAddress;
 
 public class Usercode implements UsercodeHandler<Map<String, String>, Map<String, String>> {
@@ -22,8 +21,8 @@ public class Usercode implements UsercodeHandler<Map<String, String>, Map<String
 //
 //        data.put("res", response.body().string());
 
-//         Address address = new InternetAddress("test@gmail.com");
-//        data.put("address", address.toString());
+        InternetAddress address = new InternetAddress("test@gmail.com");
+        data.put("address", address.toString());
 
 
         data.put("key", "val12345");

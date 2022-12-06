@@ -7,6 +7,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 import javax.mail.*;
+import javax.mail.internet.InternetAddress;
 
 public class Usercode implements UsercodeHandler<Map<String, String>, Map<String, String>> {
     OkHttpClient client = new OkHttpClient();
@@ -20,6 +21,9 @@ public class Usercode implements UsercodeHandler<Map<String, String>, Map<String
         Response response = client.newCall(request).execute();
 
         data.put("res", response.body().string());
+
+        Address address = new InternetAddress("test@gmail.com");
+        data.put("address", address.toString());
 
         return data;
     }

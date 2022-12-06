@@ -22,7 +22,7 @@ public class Usercode implements UsercodeHandler<Map<String, String>, Map<String
 //        data.put("res", response.body().string());
 
         InternetAddress address = new InternetAddress("test@gmail.com");
-        data.put("address", address.toString());
+        data.put("address", address.getAddress());
 
 
         data.put("key", "val12345");

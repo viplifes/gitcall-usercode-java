@@ -14,7 +14,7 @@ dependencies {
     // they are will be added to the resulting fat jar (usercode.jar)
     implementation 'com.squareup.okhttp3:okhttp:4.9.0'
     implementation 'com.google.code.gson:gson:2.8.6'
-    implementation  'javax.mail:javax.mail-api:1.4.3'
+    implementation  'javax.mail:javax.mail-api:1.5.3'
 }
 
 jar {

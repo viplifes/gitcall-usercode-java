@@ -6,6 +6,7 @@ import java.util.Map;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import javax.mail.*;
 
 public class Usercode implements UsercodeHandler<Map<String, String>, Map<String, String>> {
     OkHttpClient client = new OkHttpClient();
